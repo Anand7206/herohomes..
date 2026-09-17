@@ -55,6 +55,12 @@ a {
   transition: var(--transition);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Section Header styling */
 .section-title {
   text-align: center;
@@ -97,18 +103,18 @@ a {
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .header.sticky {
   box-shadow: var(--shadow-md);
-  padding: 6px 0;
+  padding: 8px 0;
 }
 
 .nav-container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 4px 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,10 +126,11 @@ a {
 }
 
 .logo img {
-  height: 48px;
+  height: 52px;
   width: auto;
-  display: block;
+  max-width: 220px;
   object-fit: contain;
+  display: block;
 }
 
 .header-actions {
@@ -179,9 +186,10 @@ a {
 .hero {
   position: relative;
   min-height: 100vh;
-  padding-top: 90px;
-  background: linear-gradient(135deg, rgba(11, 37, 69, 0.85) 0%, rgba(19, 64, 116, 0.75) 100%), 
-              url('assets/slider-1.webp') center/cover no-repeat;
+  padding-top: 100px;
+  background: linear-gradient(135deg, rgba(11, 37, 69, 0.88) 0%, rgba(19, 64, 116, 0.8) 100%), 
+              url('assets/slider-1.webp') center/cover no-repeat,
+              url('https://herohomeslucknow.site/assets/images/slider-1.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -374,11 +382,13 @@ a {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  min-height: 320px;
 }
 
 .overview-img-box img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -582,6 +592,8 @@ a {
 
 .cost-sheet-card img {
   width: 100%;
+  max-height: 280px;
+  object-fit: cover;
   border-radius: var(--radius-sm);
   margin-bottom: 16px;
   cursor: pointer;
@@ -594,7 +606,9 @@ a {
 
 /* Virtual Tour & Walkthrough */
 .tour-banner {
-  background: linear-gradient(rgba(11,37,69,0.9), rgba(11,37,69,0.9)), url('assets/walkthrough.webp') center/cover no-repeat;
+  background: linear-gradient(rgba(11,37,69,0.9), rgba(11,37,69,0.9)), 
+              url('assets/walkthrough.webp') center/cover no-repeat,
+              url('https://herohomeslucknow.site/assets/images/walkthrough.webp') center/cover no-repeat;
   color: #ffffff;
   padding: 80px 20px;
   text-align: center;
@@ -635,6 +649,8 @@ a {
 
 .video-wrapper img {
   width: 100%;
+  max-height: 480px;
+  object-fit: cover;
   display: block;
 }
 
@@ -865,9 +881,10 @@ a {
 .modal-body .modal-logo {
   height: 52px;
   width: auto;
-  display: block;
-  margin-bottom: 16px;
+  max-width: 240px;
   object-fit: contain;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .modal-body h3 {
@@ -896,6 +913,7 @@ a {
 .feature-box img {
   width: 44px;
   height: 44px;
+  object-fit: contain;
   margin-bottom: 8px;
 }
 
@@ -929,7 +947,8 @@ a {
   }
 
   .logo img {
-    height: 38px;
+    height: 40px;
+    max-width: 170px;
   }
 
   .header-actions {
@@ -947,7 +966,7 @@ a {
   }
 
   .hero {
-    padding-top: 76px;
+    padding-top: 86px;
   }
 
   .hero-content h1 {
