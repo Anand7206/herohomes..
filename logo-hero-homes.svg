@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" fill="none">
+  <path d="M20 12 L32 36 L44 12 H56 L38 48 H26 L8 12 H20 Z" fill="#E11D48"/>
+  <text x="68" y="38" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="26" fill="#0F172A" letter-spacing="-0.5">HERO</text>
+  <text x="148" y="38" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="26" fill="#475569" letter-spacing="-0.5">HOMES</text>
+  <text x="68" y="52" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="10" fill="#94A3B8" letter-spacing="2">LUCKNOW • KANPUR ROAD</text>
+</svg>
